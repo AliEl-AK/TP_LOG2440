@@ -1,4 +1,4 @@
-Web Application Development Course Assignments
+# Web Application Development Course Assignments
 This repository is a comprehensive collection of assignments for the Web Application Development course, 
 which dives deep into the mechanics of web software, client-server architecture, and distributed applications. 
 Here, you'll find practical examples and assignments that cover the entire spectrum of web development, 
