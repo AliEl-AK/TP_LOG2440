@@ -1,0 +1,56 @@
+[
+  {
+    "rating": 4,
+    "comment": "Ceci est un commenaitre",
+    "author": "John Doe",
+    "reviewedPartnerId": "433560e4-62b9-481b-8135-da9bb9d68102",
+    "id": "531d0f51-8f5e-4e92-93a2-dc8ce614eb5e",
+    "date": "2023-10-10",
+    "likes": 7
+  },
+  {
+    "rating": 3,
+    "comment": "Pas mal",
+    "author": "Rupert Giles",
+    "reviewedPartnerId": "m4n5o6p7-q8r9-s1t2-u3v4-w5x6y7z8a9b",
+    "id": "530d0c51-8f5e-4e91-93a2-dc8ce614eb5e",
+    "date": "2023-10-11",
+    "likes": 2
+  },
+  {
+    "rating": "2",
+    "comment": "wer",
+    "author": "snoop",
+    "reviewedPartnerId": "433560e4-62b9-481b-8135-da9bb9d68102",
+    "likes": 2,
+    "date": "2023-11-13",
+    "id": "aff74442-2765-427d-884f-ea6c0c3f491e"
+  },
+  {
+    "rating": "1",
+    "comment": "asdsad",
+    "author": "sadsad",
+    "reviewedPartnerId": "dbcbe203-34a3-463c-896e-326797fd5815",
+    "likes": 0,
+    "date": "2023-11-13",
+    "id": "f35969cf-efdb-45d4-966b-700b09b1753e"
+  },
+  {
+    "rating": "1",
+    "comment": "",
+    "author": "",
+    "reviewedPartnerId": "a9b561ab-6cb7-4d14-8b58-d93dd55e24f3",
+    "likes": 0,
+    "date": "2023-11-13",
+    "id": "05ce988f-cae2-4125-8c17-bff4ddad48f0"
+  },
+  {
+    "rating": "1",
+    "comment": "",
+    "author": "",
+    "reviewedPartnerId": "433560e4-62b9-481b-8135-da9bb9d68102",
+    "likes": 0,
+    "date": "2023-11-13",
+    "id": "a845c96a-ca48-42b5-a6aa-d18e58477811"
+  }
+]

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favico.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/?">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <title>PolyPlay</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <div id="container" class="flex-container">
+  
+        <div id="left-container">
+          <nav id="nav-bar">
+            <ul>
+              <li><a href="./index.html" id="logo-container">
+                <img id = "logo" class="img" alt="logo" src="assets/img/logo-polyflix.png" title="Accueil">
+              </a></li>
+              <li class="white"><a href="./admin.html">Admin</a></li>
+              <li class="white"><a href="./about.html">À propos</a></li>
+            </ul>
+          </nav>
+        </div>
+  
+        <div id="right-container">
+          <nav id="nav-bar-2">
+          <form id="search-form" class="search-form">
+            <input type="text" id="search-input" placeholder="Recherche de films" />
+            <button type="submit" class="fa fa-2x fa-search"></button>
+          </form>
+        </nav>
+        </div>
+  
+      </div>
+    </header>  
+      
+    
+    <div class="posters-container" data-list-context="nouveautes"> 
+      <h2>Nouveautés <i class="fa-solid fa-film"></i></h2> 
+      <div class="movie-container">
+        <ul class="movie-list">
+          <li>
+            <div class="poster-container">
+              <a id="movie-1" href="movie.html">
+              <img alt="film" src="assets/img/desert.jpg">
+              <div class="movie-title">Desert <i class="fa-solid fa-play"></i></div>
+            </a>
+            </div>
+          </li>
+          <li>
+            <div class="poster-container">
+              <a id="movie-2" href="movie.html">
+              <img alt="film" src="assets/img/cyborg.jpg">
+              <div class="movie-title">Cyborg 4 <i class="fa-solid fa-play"></i></div>
+            </a>
+            </div>
+          </li>
+          <li>
+            <div class="poster-container">
+              <a id="movie-3" href="movie.html">
+              <img alt="film" src="assets/img/noir.jpg">
+              <div class="movie-title">Noir <i class="fa-solid fa-play"></i></div>
+            </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="posters-container" data-list-context="Vos recommandations">
+      <h2>Vos recommandations <i class="fa-solid fa-heart"></i></h2> 
+      <div class="movie-container">
+        <ul class="movie-list">
+          <li>
+            <div class="poster-container">
+              <a id="movie-4" href="movie.html">
+              <img alt="film" src="assets/img/arizona.jpg">
+              <div class="movie-title">Arizona <i class="fa-solid fa-play"></i></div>
+            </a>
+            </div>
+          </li>
+          <li>
+            <div class="poster-container">
+              <a id="movie-5" href="movie.html">  
+              <img alt="film" src="assets/img/piano.jpg">
+              <div class="movie-title">Piano<i class="fa-solid fa-play"></i></div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <!-- TODO : completer le bas de page -->
+  <span id="student-1"> Ali El-Akhras 2143326 </span>
+    <span id="student-2">Sobhi Sandakli 2136216 </span>
+  </footer>
+
+</body>
+
+</html>

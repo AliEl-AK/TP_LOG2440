@@ -1,0 +1,317 @@
+:root {
+  --main-bg: black;
+  --main-color: white;
+  --secondary-bg: #37393a;
+  --container-bg: #262626;
+  --highlight-color: #E50914;
+  --call-to-action: aqua;
+  --positive-correspondance: green;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  }
+  
+body {
+  margin: 0px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: var(--main-color);
+  background-color: var(--secondary-bg);
+}
+
+/* -----------------------------------------------------------------------------------------*/
+/* Everything header realated */
+header {
+  padding: 8px 20px;
+  background-color: black;
+}
+
+#right-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#logo {
+  position: relative;
+  width: 80px;
+  left: 25px;
+  top: 2px;
+  padding: 0px;
+  vertical-align: top; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 55px; 
+}
+
+#nav-bar ul li a {
+
+  font-size: 12.5px;
+  text-decoration: none;
+}
+
+#nav-bar ul li a:hover {
+  text-decoration: underline;
+}
+
+#nav-bar ul li:nth-child(2) {
+  margin-right: 40px; 
+}
+
+.white a {
+  color: white
+}
+
+.red a {
+  color: red;
+}
+
+.search-form input[type="text"] {
+  font-size: 9px;
+  padding: 5px 3px;
+}
+
+.search-form button {
+padding: 10px 8px; 
+background: black;
+color: var(--main-color);
+border: none;
+font-size: 15px;  
+}
+
+/* -----------------------------------------------------------------------------------------*/
+/* Everything Footer Related */
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: var(--main-bg);
+  text-align: center; 
+}
+  
+footer span {
+  margin-right: 20px; 
+  font-size: 14px;
+}
+
+/* -----------------------------------------------------------------------------------------*/
+/* Everything "About" related */
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size:14px;
+}
+  
+section>p>a {
+    color: var(--call-to-action);
+    text-decoration: none;
+}
+
+/* -----------------------------------------------------------------------------------------*/
+/* Everything "Admin" related */
+
+fieldset {
+  position: relative;
+  top: 20px;
+  left: 20%;
+  max-width:310px;
+}
+
+fieldset div {
+  margin-bottom: 10px;
+  font-size: 12.5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset input[type="text"],
+fieldset input[type="date"],
+fieldset input[type="number"] {
+  padding: 0.2rem 1.1rem;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 12.5px;
+  text-align: right;
+}
+
+.submit-button input {
+  left: 50%;
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.submit-button {
+  position: relative;
+  top: 60px;
+}
+
+#Cyborg-Photo {
+  width: 200px;
+  position: absolute;
+  top: 70px;
+  right: 80px;
+}
+
+/* -----------------------------------------------------------------------------------------*/
+/* Everything "Index" related */
+
+
+.movie-container {
+  padding: 20px; /* Add padding only to top and bottom */
+  background-color: #202020; /* Fill horizontal line with background color */
+  
+}
+.posters-container{
+  background-color: #37393a;
+}
+
+.posters-container .movie-list li {
+  margin-right: 5px; 
+  margin-left: 5px;
+  position: relative;
+}
+
+.posters-container .movie-list li img {
+  width: 240px; 
+  height: 300px; 
+  object-fit: cover;
+}
+.poster-container:hover img {
+  opacity: 0.3; 
+  transition: opacity 0.5s ease; 
+}
+.poster-container:hover .movie-title {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.movie-title {
+  color: white;
+  white-space: nowrap;
+  padding: 16px 32px;
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  transform: translate(-75%, -65%);
+  opacity: 0;
+  z-index: 1; 
+}
+.poster-container .fa-play {
+  font-size: 32px; 
+  color: #fff; 
+  position: absolute;
+  top: calc(50% + 20px); 
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0; 
+  z-index: 2; 
+  transition: opacity 0.3s ease; 
+}
+
+.poster-container:hover .fa-play {
+  opacity: 1;
+}
+.posters-container[data-list-context="nouveautes"] h2{
+  position: relative;
+  left: 10px; /* Adjust the left position as needed */
+}
+.posters-container[data-list-context="Vos recommandations"] h2{
+  position: relative;
+  left: 10px; /* Adjust the left position as needed */
+}
+
+/* -----------------------------------------------------------------------------------------*/
+/* Everything "Movie" related */
+
+.movie-poster{
+  width: 200px;
+  height: 300px;
+  position: relative;
+  top: -350px;
+  left: 90px;
+} 
+video.movie-container{
+position: relative;
+top: 500px;
+left: 600px;
+width: 800px;
+
+}
+.movie-info{
+position: relative;
+top: -650px;
+left: 300px;
+width: 800px;
+}
+#movie-corr {
+color: green; 
+}
+
+/* -----------------------------------------------------------------------------------------*/
+
+/* Under 800 px */
+@media screen and (max-width: 800px) {
+/*Everything header realated */
+
+  header {
+    padding: 35px 30px;
+  }
+
+  #left-container {
+    position: fixed;
+    top: 8px;
+    left: 20px;
+  }
+
+  #right-container {
+    top: 30px;
+  }
+
+  #nav-bar-2{
+    position: fixed;
+    left: 40px; 
+    right: 25px;
+  }
+
+  #search-input {
+    width: 90%; 
+    padding: 8px 2px
+  }
+
+  /* -------------------------------------------------------*/
+  /* Everything "Admin" related */
+  #Cyborg-Photo {
+    display: none;
+  }
+
+  /* -------------------------------------------------------*/
+  /* Everything "Index" related */
+  .posters-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .posters-container[data-list-context="nouveautes"] .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .posters-container[data-list-context="nouveautes"] .movie-list li {
+    flex-basis: 30%; 
+    box-sizing: border-box;
+  } 
+}

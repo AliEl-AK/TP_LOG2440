@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/img/favico.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600&family=Roboto:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+  <title>PolyPlay</title>
+</head>
+
+<body>
+  <header>
+    <div id="container" class="flex-container">
+
+      <div id="left-container">
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="./index.html" id="logo-container">
+              <img id = "logo" class="img" alt="logo" src="assets/img/logo-polyflix.png" title="Accueil">
+            </a></li>
+            <li class="red"><a href="./admin.html">Admin</a></li>
+            <li class="white"><a href="./about.html">À propos</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="right-container">
+        <nav id="nav-bar-2">
+        <form id="search-form" class="search-form">
+          <input type="text" id="search-input" placeholder="Recherche de films" />
+          <button type="submit" class="fa fa-2x fa-search"></button>
+        </form>
+      </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- TODO : Compléter la page HTML -->
+    <form>
+      <fieldset>
+        <legend>Informations générales</legend>
+        <div>
+          <label for="name">Nom du film: </label>
+          <input type="text" id="name" name="name" required minlength="1" pattern=".*\S+.*">
+        </div>
+        <div>
+          <label for="description">Description: </label>
+          <input type="text" id="description" name="description" required minlength="10" >
+        </div>
+        <div>
+          <label for="duration">Durée (minutes): </label>
+          <input type="number" id="duration" name="duration" required min="1">
+        </div>
+        <div>
+          <label for="release-date">Date de sortie: </label>
+          <input type="date" id="release-date" name="release-date" required>
+        </div>
+        <div>
+          <label for="image">Image: </label>
+          <input type="file" id="image" name="image" accept="image/*" required>
+        </div>
+        <div>
+          <label for="video">Vidéo: </label>
+          <input type="file" id="video" name="video" accept="video/*" required>
+        </div>
+        <div>
+          <label for="actor-input">Act.eurs.rices: </label>
+          <input id="actor-input" type="select" list="actors-datalist" name="actors">
+          <datalist id="actors-datalist">
+            <option value="Margerite Montaigne">
+            <option value="Chantale Tremblay">
+            <option value="Véronique Bélanger">
+          </datalist>
+          <button id="plus-button" type="button" class="fa fa-plus"></button>
+        </div>
+        <div>1. Véronique Bélanger</div>
+      </fieldset>
+    
+      <div class="submit-button">
+        <input type="submit" value="Ajouter le film" id="submit-button">
+      </div>
+    </form>
+     
+
+    <div> <img id = "Cyborg-Photo" alt = "photo" src="assets/img/cyborg.jpg" > </div>
+  </main>
+
+  <footer>
+    <span id="student-1"> Ali El-Akhras 2143326 </span>
+    <span id="student-2">Sobhi Sandakli 2136216 </span>
+  </footer>
+
+</body>
+
+</html>
